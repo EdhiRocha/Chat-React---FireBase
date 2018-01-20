@@ -4,7 +4,20 @@ import React, { Component } from 'react'
 
 const Comment = (props) => {
     return (
-        <p className="card-panel teal lighten-5">{props.comment.comment}</p>
+        <div>
+            <div className="green lighten-5 z-depth-1">
+                <div className="row valign-wrapper">
+                    <div className="col s1">
+                        <img src={ props.comment.user.photo } alt="props.comment.user.name" class="responsive-img" width="60" height="60" />
+                    </div>
+                    <div className="col s11">
+                        <span class="black-text">
+                            {props.comment.comment}
+                        </span>
+                    </div>
+                </div>
+            </div>            
+        </div>    
     )
 }
 

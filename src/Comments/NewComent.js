@@ -19,7 +19,7 @@ class NewComent extends Component {
     render() {
         return (
             <div className="row">
-                <form className="col s12">
+                <form className="col s10">
                     <div className="row">
                         <div className="input-field col s12">
                             <i className="material-icons prefix"></i>
